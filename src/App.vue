@@ -1,7 +1,7 @@
 <template lang="html">
 <div>
   <div class="">
-    <sequence-builder v-if="selectedTab"/>
+    <sequence-builder />
     <history/>
   </div>
 </div>
