@@ -9,7 +9,7 @@
 
 <script>
 import SequenceBuilder from './components/SequenceBuilder.vue';
-import History from './components/history.vue'
+import History from './components/History.vue'
 
 export default {
   name: 'app',
