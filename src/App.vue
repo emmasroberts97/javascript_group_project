@@ -9,13 +9,15 @@
 
 <script>
 import SequenceBuilder from './components/SequenceBuilder.vue';
-import History from './components/History.vue'
+import History from './components/History.vue';
+import YogaTypes from './components/YogaTypes.vue';
 
 export default {
   name: 'app',
   components: {
     "sequence-builder": SequenceBuilder,
-    "history": History
+    "history": History,
+    "yoga-types": YogaTypes
   }
 }
 </script>
