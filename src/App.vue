@@ -1,14 +1,24 @@
 <template lang="html">
-<sequence-builder />
+
+  <div class="">
+    <sequence-builder />
+  </div>
+
+  <div class="">
+    <history/>
+  </div>
+
 </template>
 
 <script>
 import SequenceBuilder from './components/SequenceBuilder.vue';
+import History from './components/history.vue'
 
 export default {
   name: 'app',
   components: {
-    "sequence-builder": SequenceBuilder
+    "sequence-builder": SequenceBuilder,
+    "history": History
   }
 }
 </script>
