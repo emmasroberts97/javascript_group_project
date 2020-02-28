@@ -1,10 +1,10 @@
 <template lang="html">
-
+<div>
   <div class="">
-    <sequence-builder />
+    <sequence-builder v-if="selectedTab"/>
     <history/>
   </div>
-
+</div>
 </template>
 
 <script>
@@ -13,6 +13,11 @@ import History from './components/History.vue'
 
 export default {
   name: 'app',
+  data() {
+    return {
+      selectedTab: ""
+    }
+  },
   components: {
     "sequence-builder": SequenceBuilder,
     "history": History
