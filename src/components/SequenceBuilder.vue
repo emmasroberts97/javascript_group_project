@@ -1,8 +1,13 @@
 <template lang="html">
-
+<div>
+<yoga-grid :yogaPoses="yogaPoses" />
+</div>
 </template>
 
 <script>
+
+import YogaGrid from "./YogaGrid.vue";
+
 export default {
   name: "sequence-builder",
   data() {
@@ -16,6 +21,9 @@ export default {
       .then(data => {
         this.yogaPoses = data;
       })
+  },
+  components: {
+    "yoga-grid": YogaGrid
   }
 }
 </script>
