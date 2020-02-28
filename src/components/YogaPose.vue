@@ -1,7 +1,7 @@
 <template lang="html">
 <div class="card">
-  <p>{{pose.sanskrit_name}}</p>
-  <p>{{pose.english_name}}</p>
+  <h3>{{pose.english_name}}</h3>
+  <p>Sanskrit Name: {{pose.sanskrit_name}}</p>
   <img :src="pose.img_url" height="200" width="200"/>
 </div>
 
@@ -15,4 +15,14 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.card{
+  background: white;
+  float: left;
+  border-style: solid;
+  margin: 10px;
+}
+
+h3, p {
+  padding: 5px;
+}
 </style>
