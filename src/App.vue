@@ -2,9 +2,6 @@
 
   <div class="">
     <sequence-builder />
-  </div>
-
-  <div class="">
     <history/>
   </div>
 
