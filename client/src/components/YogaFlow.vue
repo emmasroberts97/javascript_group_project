@@ -1,7 +1,7 @@
 <template lang="html">
 <div>
 <h1>Your Yoga Flow</h1>
-  <vueper-slides autoplay duration="10000" fixedHeight="500px">
+  <vueper-slides autoplay duration="10000" fixedHeight="600px">
     <vueper-slide v-for="(pose, index) in flow"
       :key="pose.id"
       :image="pose.img_url" />
@@ -25,4 +25,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
+vueper-slide {
+  height: 300px;
+}
 </style>
