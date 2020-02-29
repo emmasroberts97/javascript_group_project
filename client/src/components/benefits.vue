@@ -26,6 +26,10 @@
           movement. That's the only way they get their nutrients. If you've got a
           well-balanced asana practice with plenty of backbends, forward bends, and twists,
           you'll help keep your disks supple.</p>
+          <h3>Well being</h3>
+          <p>Like many other physical activities, Yoga also helps with mental
+          health and well being. Keeping active is one of the key ingredints for having
+        a postive mind set and helping with depression.</p>
         </div>
       </template>
 
