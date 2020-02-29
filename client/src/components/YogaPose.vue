@@ -17,11 +17,6 @@ import {eventBus} from '../main.js';
 export default {
   name: "yoga-pose",
   props: ['pose'],
-  data() {
-    return {
-      flow: []
-    }
-  },
   methods: {
     addFlow: function(){
       eventBus.$emit('pose-added', this.pose)

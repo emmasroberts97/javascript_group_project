@@ -1,7 +1,8 @@
 <template lang="html">
 <div>
-<yoga-grid :yogaPoses="yogaPoses" />
-<yoga-flow :flow="flow" />
+<yoga-select :flow="flow"/>
+<yoga-grid v-if="selectedTab == 'Grid'" :yogaPoses="yogaPoses" />
+<yoga-flow :flow="flow" v-if="selectedTab == 'Flow'"/>
 </div>
 </template>
 
@@ -9,6 +10,7 @@
 
 import YogaGrid from "./YogaGrid.vue";
 import YogaFlow from "./YogaFlow.vue";
+import YogaFlowSelect from "./YogaFlowSelect.vue";
 import {eventBus} from '../main.js';
 
 export default {
@@ -16,7 +18,8 @@ export default {
   data() {
     return {
       yogaPoses: [],
-      flow: []
+      flow: [],
+      selectedTab: "Grid"
     }
   },
   mounted() {
@@ -30,10 +33,15 @@ export default {
           this.flow.push(pose)
       });
 
+      eventBus.$on('tab-change', (tab) => {
+          this.selectedTab = tab
+      });
+
   },
   components: {
     "yoga-grid": YogaGrid,
-    "yoga-flow": YogaFlow
+    "yoga-flow": YogaFlow,
+    "yoga-select": YogaFlowSelect
   }
 }
 </script>

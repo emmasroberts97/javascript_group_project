@@ -1,6 +1,7 @@
 <template lang="html">
 <div>
-  <vueper-slides autoplay duration="10000">
+<h1>Your Yoga Flow</h1>
+  <vueper-slides autoplay duration="10000" fixedHeight="500px">
     <vueper-slide v-for="(pose, index) in flow"
       :key="pose.id"
       :image="pose.img_url" />
