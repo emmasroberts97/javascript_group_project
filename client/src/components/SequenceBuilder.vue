@@ -1,18 +1,22 @@
 <template lang="html">
 <div>
 <yoga-grid :yogaPoses="yogaPoses" />
+<yoga-flow :flow="flow" />
 </div>
 </template>
 
 <script>
 
 import YogaGrid from "./YogaGrid.vue";
+import YogaFlow from "./YogaFlow.vue";
+import {eventBus} from '../main.js';
 
 export default {
   name: "sequence-builder",
   data() {
     return {
-      yogaPoses: []
+      yogaPoses: [],
+      flow: []
     }
   },
   mounted() {
@@ -21,9 +25,15 @@ export default {
       .then(data => {
         this.yogaPoses = data;
       })
+
+      eventBus.$on('pose-added', (pose) => {
+          this.flow.push(pose)
+      });
+
   },
   components: {
-    "yoga-grid": YogaGrid
+    "yoga-grid": YogaGrid,
+    "yoga-flow": YogaFlow
   }
 }
 </script>
