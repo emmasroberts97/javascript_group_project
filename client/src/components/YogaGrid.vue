@@ -1,5 +1,6 @@
 <template lang="html">
 <div>
+<h1>Yoga Poses</h1>
 <yoga-pose v-for="(pose, index) in yogaPoses" :key="index" :pose="pose" />
 </div>
 </template>
