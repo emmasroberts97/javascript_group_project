@@ -16,6 +16,8 @@
     <sequence-builder v-if="selectedTab == 'flow'"/>
     <history v-if="selectedTab == 'history'"/>
     <yoga-types v-if="selectedTab == 'types'" />
+    <benefits v-if="selectedTab == 'benefits'"/>
+    <resources v-if="selectedTab == 'resources'"/>
   </div>
 </div>
 </template>
@@ -24,7 +26,8 @@
 import SequenceBuilder from './components/SequenceBuilder.vue';
 import History from './components/History.vue';
 import YogaTypes from './components/YogaTypes.vue';
-
+import Benefits from './components/benefits.vue';
+import Resources from './components/Resources.vue';
 export default {
   name: 'app',
   data() {
@@ -35,7 +38,9 @@ export default {
   components: {
     "sequence-builder": SequenceBuilder,
     "history": History,
-    "yoga-types": YogaTypes
+    "yoga-types": YogaTypes,
+    "benefits": Benefits,
+"resources": Resources
   },
   methods: {
     home: function() {

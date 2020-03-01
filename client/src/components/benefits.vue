@@ -1,7 +1,7 @@
 <template lang="html">
   <div>
     <h1>The Benefits of yoga.</h1>
-    <h3> Improve hip movement </h3>
+    <h3> Improve Hip Movement </h3>
     <p>Hip hinge movement is the pattern
       of flexion and extension throughout
       the hip joint. Especially important for
@@ -13,20 +13,20 @@
       alignment during static poses, it helps to strengthen
       and loosen the hip joints while also promoting healthy hip
       hinge movement that carries over into many activities.</p>
-      <h3>Improves bones and Muscles</h3>
+      <h3>Improves Bones And Muscles</h3>
       <p>Practicing yoga on a regular basis improves the health
         of your bones while strengthening your spine and muscles.
         It also works the tendons and ligaments, making them less
         susceptible to breakdown. And, of course, yoga improves your
         flexibility. These yoga benefits work together to protect your
         body from injury.</p>
-        <h3>  Protects your spine</h3>
+        <h3>  Protects Your Spine</h3>
         <p> Spinal disks—the shock
           absorbers between the vertebrae that can herniate and compress nerves—crave
           movement. That's the only way they get their nutrients. If you've got a
           well-balanced asana practice with plenty of backbends, forward bends, and twists,
           you'll help keep your disks supple.</p>
-          <h3>Well being</h3>
+          <h3>Well-Being</h3>
           <p>Like many other physical activities, Yoga also helps with mental
           health and well being. Keeping active is one of the key ingredints for having
         a postive mind set and helping with depression.</p>
@@ -35,6 +35,7 @@
 
       <script>
       export default {
+        name: "benefits"
       }
       </script>
 
