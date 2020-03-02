@@ -32,7 +32,7 @@ export default {
         msg.voice = voices[10];
         msg.voiceURI = "native";
         msg.volume = 3;
-        msg.rate = 1;
+        msg.rate = 0.5;
         msg.pitch = 0.8;
         msg.text = "Let's get into:" + slide.currentSlide.title;
         msg.lang = 'en-US';
