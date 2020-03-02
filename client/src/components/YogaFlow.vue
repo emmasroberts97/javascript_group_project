@@ -1,5 +1,5 @@
 <template lang="html">
-<div>
+<article>
 <h1>Your Yoga Flow</h1>
   <vueper-slides autoplay duration="10000" :slide-ratio="400/400">
     <vueper-slide v-for="(pose, index) in flow"
@@ -9,7 +9,7 @@
       <i class="icon pause_circle_outline"></i>
     </template>
   </vueper-slides>
-</div>
+</article>
 </template>
 
 <script>
@@ -39,5 +39,15 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+article{
+  text-align: center;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 100%;
+  background-color: #FFFAF0;
 }
 </style>
