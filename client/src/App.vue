@@ -1,25 +1,25 @@
 <template lang="html">
-<div>
-  <nav>
-    <button type="button" name="Home" v-on:click="home">Home</button>
-    <button type="button" name="History" v-on:click="history">History</button>
-    <button type="button" name="Types" v-on:click="types">Yoga Types</button>
-    <button type="button" name="Benefits" v-on:click="benefits">Benefits</button>
-    <button type="button" name="Resources" v-on:click="resources">Resources</button>
-    <button type="button" name="Flow" v-on:click="flow">Build a Flow</button>
-  </nav>
-  <div class="">
-    <div v-if="selectedTab == 'home'">
-    <h1> Our Yoga App </h1>
-    <img src="../public/Birds.png" height="500px" width="500px"/>
-   </div>
-    <sequence-builder v-if="selectedTab == 'flow'"/>
-    <history v-if="selectedTab == 'history'"/>
-    <yoga-types v-if="selectedTab == 'types'" />
-    <benefits v-if="selectedTab == 'benefits'"/>
-    <resources v-if="selectedTab == 'resources'"/>
+  <div>
+    <nav>
+      <button type="button" name="Home" v-on:click="home">Home</button>
+      <button type="button" name="History" v-on:click="history">History</button>
+      <button type="button" name="Types" v-on:click="types">Yoga Types</button>
+      <button type="button" name="Benefits" v-on:click="benefits">Benefits</button>
+      <button type="button" name="Resources" v-on:click="resources">Resources</button>
+      <button type="button" name="Flow" v-on:click="flow">Build a Flow</button>
+    </nav>
+    <div class="">
+      <article v-if="selectedTab == 'home'">
+        <h1> Our Yoga App </h1>
+        <img src="../public/Birds.png" height="500px" width="500px"/>
+      </article>
+      <sequence-builder v-if="selectedTab == 'flow'"/>
+      <history v-if="selectedTab == 'history'"/>
+      <yoga-types v-if="selectedTab == 'types'" />
+      <benefits v-if="selectedTab == 'benefits'"/>
+      <resources v-if="selectedTab == 'resources'"/>
+    </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -32,7 +32,7 @@ export default {
   name: 'app',
   data() {
     return {
-      selectedTab: ""
+      selectedTab: "home"
     }
   },
   components: {
@@ -40,7 +40,7 @@ export default {
     "history": History,
     "yoga-types": YogaTypes,
     "benefits": Benefits,
-"resources": Resources
+    "resources": Resources
   },
   methods: {
     home: function() {
@@ -66,6 +66,18 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+article{
+  text-align: center;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 100%;
+  background-color: #FFFAF0;
+}
+
+
 nav {
   display:flex;
   justify-content:space-around;
@@ -73,5 +85,15 @@ nav {
 
 button {
   width: 20%;
+  background-color: #FFFAF0;
+  color: #444;
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.active, button:hover {
+  background-color: #FFB6C1;
 }
 </style>
