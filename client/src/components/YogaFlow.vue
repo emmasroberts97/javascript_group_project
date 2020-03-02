@@ -33,5 +33,11 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
+.vueperslides {
+  width: 500px;
+  height: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 </style>
