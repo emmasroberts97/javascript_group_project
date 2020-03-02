@@ -1,6 +1,6 @@
 <template lang="html">
   <article>
-    <h1>The Benefits of yoga.</h1>
+    <h1>The Benefits of yoga</h1>
 
     <button class="accordion"> Improve hip movement</button>
     <div class="panel">
