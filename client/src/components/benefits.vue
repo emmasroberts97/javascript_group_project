@@ -43,7 +43,7 @@
               a postive mind set and helping with depression.</p>
             </div>
           </article>
-      </template>
+        </template>
 
         <script>
         export default {
@@ -70,27 +70,38 @@
         </script>
 
         <style lang="css" scoped>
+
+          article{
+            text-align: center;
+            margin-top: auto;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            height: 100%;
+          }
+
+
           .accordion {
-            background-color: #eee;
+            background-color: #FFFAF0;
             color: #444;
             cursor: pointer;
             padding: 18px;
             width: 100%;
             border: none;
-            text-align: left;
+
             outline: none;
             font-size: 15px;
             transition: 0.4s;
           }
 
           .active, .accordion:hover {
-            background-color: #ccc;
+            background-color: #FFB6C1;
           }
 
           .panel {
             padding: 0 18px;
             display: none;
-            background-color: white;
+            background-color: #FFF0F5;
             overflow: hidden;
           }
         </style>
