@@ -3,7 +3,7 @@
 <div class="card">
   <h3>{{pose.english_name}}</h3>
   <p>Sanskrit Name: {{pose.sanskrit_name}}</p>
-  <img :src="pose.img_url" height="200" width="200"/>
+  <img :src="pose.img_url" height="200" width="200" :alt="pose.english_name"/>
 <div>
   <button v-on:click="addFlow" type="button" name="flow">Add to Flow</button>
 </div>
