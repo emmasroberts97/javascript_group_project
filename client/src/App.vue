@@ -9,16 +9,17 @@
     <button type="button" name="Flow" v-on:click="flow">Build a Flow</button>
   </nav>
   <div class="">
-    <div v-if="selectedTab == 'home'">
+    <article v-if="selectedTab == 'home'">
     <h1> Our Yoga App </h1>
     <img src="../public/Birds.png" height="500px" width="500px"/>
-   </div>
+  </article>
     <sequence-builder v-if="selectedTab == 'flow'"/>
     <history v-if="selectedTab == 'history'"/>
     <yoga-types v-if="selectedTab == 'types'" />
     <benefits v-if="selectedTab == 'benefits'"/>
     <resources :yoga="this.yoga_locations" v-if="selectedTab == 'resources'"/>
   </div>
+</div>
 </template>
 
 <script>
