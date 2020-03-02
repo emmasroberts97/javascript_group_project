@@ -19,7 +19,6 @@
     <benefits v-if="selectedTab == 'benefits'"/>
     <resources :yoga="this.yoga_locations" v-if="selectedTab == 'resources'"/>
   </div>
-</div>
 </template>
 
 <script>
@@ -32,7 +31,7 @@ export default {
   name: 'app',
   data() {
     return {
-      selectedTab: "",
+      selectedTab: "home",
       yoga_locations:[]
     }
   },
@@ -47,7 +46,7 @@ mounted(){
     "history": History,
     "yoga-types": YogaTypes,
     "benefits": Benefits,
-"resources": Resources
+    "resources": Resources
   },
   methods: {
     home: function() {
@@ -73,6 +72,18 @@ mounted(){
 </script>
 
 <style lang="css" scoped>
+
+article{
+  text-align: center;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 100%;
+  background-color: #FFFAF0;
+}
+
+
 nav {
   display:flex;
   justify-content:space-around;
@@ -80,5 +91,15 @@ nav {
 
 button {
   width: 20%;
+  background-color: #FFFAF0;
+  color: #444;
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  transition: 0.4s;
+}
+
+.active, button:hover {
+  background-color: #FFB6C1;
 }
 </style>

@@ -19,4 +19,8 @@ export default {
 </script>
 
 <style lang="css" scoped>
+h1{
+  text-align: center;
+  background-color: #FFFAF0;
+}
 </style>

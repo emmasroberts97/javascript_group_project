@@ -1,5 +1,5 @@
 <template lang="html">
-  <div>
+  <article>
     <h1>The 8 Types of Yoga</h1>
 
     <button class="accordion"> Vinyasa</button>
@@ -59,7 +59,7 @@
       <p>If Yang is active, then Yin is passive, meaning the muscles are allowed to relax with gravity and rest. This is usually performed with the assistance of props, and there is little or no music in class.</p>
     </div>
 
-  </div>
+  </article>
 </template>
 
 <script>
@@ -87,27 +87,38 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+article{
+  text-align: center;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 100%;
+  /* background-color: #FFFAF0; */
+}
+
 .accordion {
-  background-color: #eee;
+  background-color: #FFFAF0;
   color: #444;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
-  text-align: left;
+  /* text-align: center; */
   outline: none;
   font-size: 15px;
   transition: 0.4s;
 }
 
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #FFB6C1;
 }
 
 .panel {
   padding: 0 18px;
   display: none;
-  background-color: white;
+  background-color: #FFF0F5;
   overflow: hidden;
 }
 </style>
