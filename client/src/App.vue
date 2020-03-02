@@ -17,7 +17,7 @@
     <history v-if="selectedTab == 'history'"/>
     <yoga-types v-if="selectedTab == 'types'" />
     <benefits v-if="selectedTab == 'benefits'"/>
-    <resources v-if="selectedTab == 'resources'"/>
+    <resources :yoga="this.yoga_locations" v-if="selectedTab == 'resources'"/>
   </div>
 </div>
 </template>
@@ -32,9 +32,16 @@ export default {
   name: 'app',
   data() {
     return {
-      selectedTab: ""
+      selectedTab: "",
+      yoga_locations:[]
     }
   },
+mounted(){
+  fetch('http://localhost:3000/api/manage')
+  .then(response => response.json())
+  .then(data => this.yoga_locations = data)
+},
+
   components: {
     "sequence-builder": SequenceBuilder,
     "history": History,
