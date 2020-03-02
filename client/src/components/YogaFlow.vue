@@ -1,8 +1,9 @@
 <template lang="html">
 <div>
 <h1>Your Yoga Flow</h1>
-  <vueper-slides autoplay duration="10000" :slide-ratio="400/400">
+  <vueper-slides autoplay duration="10000" :slide-ratio="400/400" @slide="playSlide($event)" @ready="playSlide($event)" slideContentOutside='true'>
     <vueper-slide v-for="(pose, index) in flow"
+      :title="pose.english_name"
       :key="pose.id"
       :image="pose.img_url" />
     <template v-slot:pause>
@@ -21,13 +22,22 @@ export default {
   name: "yoga-flow",
   props: ['flow'],
   components: { VueperSlides, VueperSlide },
+  mounted() {
+  },
   methods: {
-    setRatio: function() {
-      for (pose of this.pose) {
-        pose.img_url.height = '200px';
-        pose.img_url.width = '200px';
-      }
-    }
+    playSlide: function(slide) {
+      console.log(slide)
+        let msg = new SpeechSynthesisUtterance();
+        let voices = window.speechSynthesis.getVoices();
+        msg.voice = voices[10];
+        msg.voiceURI = "native";
+        msg.volume = 3;
+        msg.rate = 1;
+        msg.pitch = 0.8;
+        msg.text = "Let's get into:" + slide.currentSlide.title;
+        msg.lang = 'en-US';
+        speechSynthesis.speak(msg)
+   }
   }
 }
 </script>
