@@ -4,7 +4,7 @@
       <l-tooltip :options="{ permanent: true, interactive: true}">
         <img src="../assets/mat.png" height="20px" v-on:mouseover="showInfo = true" @mouseleave="showInfo = false">
         <div v-show="showInfo">
-          <h1>{{location.name}}</h1>
+          <h3>{{location.name}}</h3>
           <p>{{location.location}}</p>
         </div>
       </l-tooltip>
@@ -37,9 +37,7 @@ export default {
       return newCords
     }
     // ,
-    // showInfo(){
-    //   this.info = !this.info;
-    // }
+
   }
 }
 
