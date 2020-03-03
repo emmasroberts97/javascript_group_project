@@ -26,4 +26,10 @@ export default {
 </script>
 
 <style lang="css" scoped>
+select {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
 </style>
