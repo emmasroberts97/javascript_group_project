@@ -1,9 +1,9 @@
 <template lang="html">
-<div>
-<yoga-select :flow="flow"/>
-<yoga-grid v-if="selectedTab == 'Grid'" :yogaPoses="yogaPoses" />
-<yoga-flow :flow="flow" v-if="selectedTab == 'Flow'"/>
-</div>
+  <div>
+    <yoga-select :flow="flow"/>
+    <yoga-grid v-if="selectedTab == 'Grid'" :yogaPoses="yogaPoses" />
+    <yoga-flow :flow="flow" v-if="selectedTab == 'Flow'"/>
+  </div>
 </template>
 
 <script>
@@ -23,19 +23,23 @@ export default {
     }
   },
   mounted() {
-      fetch('https://raw.githubusercontent.com/rebeccaestes/yoga_api/master/yoga_api.json')
-      .then(res => res.json())
-      .then(data => {
-        this.yogaPoses = data;
-      })
+    fetch('https://raw.githubusercontent.com/rebeccaestes/yoga_api/master/yoga_api.json')
+    .then(res => res.json())
+    .then(data => {
+      this.yogaPoses = data;
+    })
 
-      eventBus.$on('pose-added', (pose) => {
-          this.flow.push(pose)
-      });
+    eventBus.$on('pose-added', (pose) => {
+      this.flow.push(pose)
+    });
 
-      eventBus.$on('tab-change', (tab) => {
-          this.selectedTab = tab
-      });
+    eventBus.$on('tab-change', (tab) => {
+      this.selectedTab = tab
+    });
+
+    eventBus.$on('clear-flow', (flow) => {
+      this.flow = flow
+    });
 
   },
   components: {
