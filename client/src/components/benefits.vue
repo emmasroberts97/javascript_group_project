@@ -4,7 +4,7 @@
 
     <button class="accordion"> Improve Hip Movement</button>
     <div class="panel">
-      <p>Hip hinge movement is the pattern
+      <p id="float-right">Hip hinge movement is the pattern
         of flexion and extension throughout
         the hip joint. Especially important for
         runners, hikers and people who enjoy kettle
@@ -15,25 +15,28 @@
         alignment during static poses, it helps to strengthen
         and loosen the hip joints while also promoting healthy hip
         hinge movement that carries over into many activities.</p>
+        <img src="https://static01.nyt.com/images/2016/12/06/well/move/yoga-for-everyone_promo/yoga-for-everyone_promo-superJumbo.jpg" alt="Warrior Three Pose" class="img1">
       </div>
 
       <button class="accordion"> Improves Bones and Muscles</button>
       <div class="panel">
-        <p>Practicing yoga on a regular basis improves the health
+        <p id="float-left">Practicing yoga on a regular basis improves the health
           of your bones while strengthening your spine and muscles.
           It also works the tendons and ligaments, making them less
           susceptible to breakdown. And, of course, yoga improves your
           flexibility. These yoga benefits work together to protect your
           body from injury.</p>
+          <img src="https://cdn.shopify.com/s/files/1/0032/7539/1011/articles/Yoga_How-to-Do-Crow-Pose-in-Yoga_01_300x208_dcbae444-0532-4a21-a8cb-6923d1830776_600x.jpg?v=1558424650" alt="Crow Position" class="img2">
         </div>
 
         <button class="accordion"> Protects Your Spine</button>
         <div class="panel">
-          <p> Spinal disks—the shock
+          <p id="float-right"> Spinal disks—the shock
             absorbers between the vertebrae that can herniate and compress nerves—crave
             movement. That's the only way they get their nutrients. If you've got a
             well-balanced asana practice with plenty of backbends, forward bends, and twists,
             you'll help keep your disks supple.</p>
+            <img src="https://www.yogajournal.com/.image/t_share/MTQ3MTU3MTIzNjI3NzU0OTU4/3hp_288_07_bjk2.jpg" alt="Crescent Lunge Position" class="img1">
           </div>
 
           <button class="accordion"> Well Being</button>
@@ -70,6 +73,30 @@
         </script>
 
         <style lang="css" scoped>
+
+          #float-right {
+            float: right;
+          }
+
+          #float-left {
+            float: left;
+          }
+
+          p{
+            width: 65%;
+          }
+
+          .img1 {
+            float: left;
+            width: 30%;
+            display: inline-flex;
+          }
+
+          .img2 {
+            float: right;
+            width: 30%;
+            display: inline-flex;
+          }
 
           article{
             text-align: center;
