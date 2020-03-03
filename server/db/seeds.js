@@ -81,8 +81,5 @@ db.manage.insertMany([
    name:"Gentle yoga classes",
    location:"72 Berkeley St, Glasgow G3 7DS",
    latLng:[55.865440, -4.275192]
- },
- {
-   name:""
  }
 ])
