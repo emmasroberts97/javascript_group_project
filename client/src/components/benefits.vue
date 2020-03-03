@@ -1,8 +1,8 @@
 <template lang="html">
   <article>
-    <h1>The Benefits of yoga</h1>
+    <h1>The Benefits of Yoga</h1>
 
-    <button class="accordion"> Improve hip movement</button>
+    <button class="accordion"> Improve Hip Movement</button>
     <div class="panel">
       <p>Hip hinge movement is the pattern
         of flexion and extension throughout
@@ -17,7 +17,7 @@
         hinge movement that carries over into many activities.</p>
       </div>
 
-      <button class="accordion"> Improves bones and Muscles</button>
+      <button class="accordion"> Improves Bones and Muscles</button>
       <div class="panel">
         <p>Practicing yoga on a regular basis improves the health
           of your bones while strengthening your spine and muscles.
@@ -27,7 +27,7 @@
           body from injury.</p>
         </div>
 
-        <button class="accordion"> Protects your spine</button>
+        <button class="accordion"> Protects Your Spine</button>
         <div class="panel">
           <p> Spinal disks—the shock
             absorbers between the vertebrae that can herniate and compress nerves—crave
@@ -36,7 +36,7 @@
             you'll help keep your disks supple.</p>
           </div>
 
-          <button class="accordion"> Well being</button>
+          <button class="accordion"> Well Being</button>
           <div class="panel">
             <p>Like many other physical activities, Yoga also helps with mental
               health and well being. Keeping active is one of the key ingredints for having
