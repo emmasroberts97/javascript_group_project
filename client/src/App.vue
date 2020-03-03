@@ -5,7 +5,7 @@
     <button type="button" name="History" v-on:click="history">History</button>
     <button type="button" name="Types" v-on:click="types">Yoga Types</button>
     <button type="button" name="Benefits" v-on:click="benefits">Benefits</button>
-    <button type="button" name="Resources" v-on:click="resources">Resources</button>
+    <button type="button" name="Resources" v-on:click="resources">Studios</button>
     <button type="button" name="Flow" v-on:click="flow">Build a Flow</button>
   </nav>
   <div class="">

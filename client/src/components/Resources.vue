@@ -1,8 +1,9 @@
 <template>
+<div>
 
-  <div style="height: 500px; width: 100%">
+  <h1>Find yoga studios near you!</h1>
+  <div id=map style="height: 500px; width: 90%" >
     <div style="height: 200px overflow: auto;">
-      <h1>Here are some yoga stuides near our favourite place!!</h1>
 
     </div>
     <l-map
@@ -29,12 +30,12 @@
 <l-marker :lat-lng="withTooltip">
   <l-tooltip :options="{ permanent: true, interactive: true }">
 
-    <div @click="showLongText">
-      CodeClan
+    <img src="../assets/codeclan-logo.png" height="20px" @click="showLongText">
+
       <p v-show="showParagraph">
-        The home of coding
+        CodeClan
       </p>
-    </div>
+
   </l-tooltip>
 </l-marker>
 
@@ -101,6 +102,7 @@ Move Studios
 </l-marker> -->
 </l-map>
 </div>
+</div>
 </template>
 
 <script>
@@ -165,3 +167,24 @@ export default {
   }
 };
 </script>
+
+<style media="screen">
+
+h1{
+  background-color: #FFFAF0;
+width: 50%;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+}
+#map{
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+</style>

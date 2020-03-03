@@ -26,5 +26,10 @@ db.manage.insertMany([
    name: "Move Studios",
    location: "27-45 Stockwell Pl, Glasgow G1 4HS",
    latLng: [55.856735, -4.250980]
+ },
+ {
+   name: "Shanti Yoga Glasgow",
+   location: "20 Sandyford St, Yorkhill St, Glasgow G3 8QJ",
+   latLng: [55.865124, -4.296059]
  }
 ])
