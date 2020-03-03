@@ -10,7 +10,7 @@
   </nav>
   <div class="">
     <article v-if="selectedTab == 'home'">
-    <h1> Our Yoga App </h1>
+    <h1> Bend It Like Bikram</h1>
     <img src="../public/Birds.png" height="500px" width="500px"/>
   </article>
     <sequence-builder v-if="selectedTab == 'flow'"/>
