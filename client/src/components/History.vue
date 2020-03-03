@@ -26,7 +26,7 @@
 
     <button class="accordion"> Modern Period</button>
     <div class="panel">
-      <p id="float-left">In the late 1800s and early 1900s, yoga masters began to travel to the West, attracting attention and followers. This began at the 1893 Parliament of Religions in Chicago, when Swami Vivekananda wowed the attendees with his lectures on yoga and the universality of the world’s religions. In the 1920s and 30s, Hatha Yoga was strongly promoted in India with the work of T. Krishnamacharya, Swami Sivananda and other yogis practicing Hatha Yoga. Krishnamacharya opened the first Hatha Yoga school in Mysore in 1924 and in 1936 Sivananda founded the Divine Life Society on the banks of the holy Ganges River. Krishnamacharya produced three students that would continue his legacy and increase the popularity of Hatha Yoga: B.K.S. Iyengar, T.K.V. Desikachar and Pattabhi Jois. Sivananda was a prolific author, writing over 200 books on yoga, and established nine ashrams and numerous yoga centers located around the world.</p>
+      <p>In the late 1800s and early 1900s, yoga masters began to travel to the West, attracting attention and followers. This began at the 1893 Parliament of Religions in Chicago, when Swami Vivekananda wowed the attendees with his lectures on yoga and the universality of the world’s religions. In the 1920s and 30s, Hatha Yoga was strongly promoted in India with the work of T. Krishnamacharya, Swami Sivananda and other yogis practicing Hatha Yoga. Krishnamacharya opened the first Hatha Yoga school in Mysore in 1924 and in 1936 Sivananda founded the Divine Life Society on the banks of the holy Ganges River. Krishnamacharya produced three students that would continue his legacy and increase the popularity of Hatha Yoga: B.K.S. Iyengar, T.K.V. Desikachar and Pattabhi Jois. Sivananda was a prolific author, writing over 200 books on yoga, and established nine ashrams and numerous yoga centers located around the world.</p>
       <p>The importation of yoga to the West still continued at a trickle until Indra Devi opened her yoga studio in Hollywood in 1947. Since then, many more western and Indian teachers have become pioneers, popularizing hatha yoga and gaining millions of followers. Hatha Yoga now has many different schools or styles, all emphasizing the many different aspects of the practice.</p>
     </div>
 
@@ -61,14 +61,12 @@ export default {
 
 #float-right {
   float: right;
+    width: 65%;
 }
 
 #float-left {
   float: left;
-}
-
-p{
-  width: 65%;
+    width: 65%;
 }
 
 .img1 {
