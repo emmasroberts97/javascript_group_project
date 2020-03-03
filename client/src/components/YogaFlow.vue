@@ -48,6 +48,21 @@ export default {
 </script>
 
 <style lang="css" scoped>
+
+button {
+  width: 20%;
+  background-color: #FFFAF0;
+  color: #444;
+  cursor: pointer;
+  text-align: center;
+  font-size: 20px;
+  transition: 0.4s;
+  margin-bottom: 10px;
+}
+
+.active, button:hover {
+  background-color: #FFB6C1;
+}
 .vueperslides {
   width: 500px;
   height: 500px;

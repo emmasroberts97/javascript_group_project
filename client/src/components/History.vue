@@ -11,10 +11,11 @@
       <p>The beginnings of Yoga were developed by the Indus-Sarasvati civilization in Northern India over 5,000 years ago. The word yoga was first mentioned in the oldest sacred texts, the Rig Veda. The Vedas were a collection of texts containing songs, mantras and rituals to be used by Brahmans, the Vedic priests. Yoga was slowly refined and developed by the Brahmans and Rishis (mystic seers) who documented their practices and beliefs in the Upanishads, a huge work containing over 200 scriptures. The most renowned of the Yogic scriptures is the Bhagavad-Gîtâ, composed around 500 B.C.E. The Upanishads took the idea of ritual sacrifice from the Vedas and internalized it, teaching the sacrifice of the ego through self-knowledge, action (karma yoga) and wisdom (jnana yoga).</p>
     </div>
 
-<button class="accordion">Classical Yoga</button>
+    <button class="accordion">Classical Yoga</button>
     <div class="panel">
       <p>In the pre-classical stage, yoga was a mishmash of various ideas, beliefs and techniques that often conflicted and contradicted each other. The Classical period is defined by Patanjali’s Yoga-Sûtras, the first systematic presentation of yoga. Written some time in the second century, this text describes the path of Raja Yoga, often called "classical yoga". Patanjali organized the practice of yoga into an "eight limbed path" containing the steps and stages towards obtaining Samadhi or enlightenment. Patanjali is often considered the father of yoga and his Yoga-Sûtras still strongly influence most styles of modern yoga.</p>
     </div>
+
     <button class="accordion"> Post-Classical Yoga</button>
     <div class="panel">
       <p>A few centuries after Patanjali, yoga masters created a system of practices designed to rejuvenate the body and prolong life. They rejected the teachings of the ancient Vedas and embraced the physical body as the means to achieve enlightenment. They developed Tantra Yoga, with radical techniques to cleanse the body and mind to break the knots that bind us to our physical existence. This exploration of these physical-spiritual connections and body centered practices led to the creation of what we primarily think of yoga in the West: Hatha Yoga.</p>
