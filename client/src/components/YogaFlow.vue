@@ -11,6 +11,7 @@
         <i class="icon pause_circle_outline"></i>
       </template>
     </vueper-slides>
+    <iframe src="https://www.youtube.com/embed/EeZHNmtBvDI?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" style="width:0;height:0;border:0; border:none;"></iframe>
   </article>
 </template>
 
