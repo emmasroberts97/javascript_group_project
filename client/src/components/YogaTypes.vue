@@ -122,7 +122,3 @@ article{
   overflow: hidden;
 }
 </style>
-
-
-
-<!-- https://www.doyou.com/8-types-of-yoga-explained-16100/ -->

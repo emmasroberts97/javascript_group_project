@@ -116,6 +116,3 @@ article{
   overflow: hidden;
 }
 </style>
-
-
-<!-- https://www.yogabasics.com/learn/history-of-yoga/ -->
