@@ -2,7 +2,7 @@
   <article>
     <h1>The Benefits of Yoga</h1>
 
-    <button class="accordion"> Improve Hip Movement</button>
+    <button class="accordion"> Improve Hip Movement &darr;</button>
     <div class="panel">
       <p id="float-right">Hip hinge movement is the pattern
         of flexion and extension throughout
@@ -18,7 +18,7 @@
         <img src="https://static01.nyt.com/images/2016/12/06/well/move/yoga-for-everyone_promo/yoga-for-everyone_promo-superJumbo.jpg" alt="Warrior Three Pose" class="img1">
       </div>
 
-      <button class="accordion"> Improves Bones and Muscles</button>
+      <button class="accordion"> Improves Bones and Muscles &darr;</button>
       <div class="panel">
         <p id="float-left">Practicing yoga on a regular basis improves the health
           of your bones while strengthening your spine and muscles.
@@ -29,7 +29,7 @@
           <img src="https://cdn.shopify.com/s/files/1/0032/7539/1011/articles/Yoga_How-to-Do-Crow-Pose-in-Yoga_01_300x208_dcbae444-0532-4a21-a8cb-6923d1830776_600x.jpg?v=1558424650" alt="Crow Position" class="img2">
         </div>
 
-        <button class="accordion"> Protects Your Spine</button>
+        <button class="accordion"> Protects Your Spine &darr;</button>
         <div class="panel">
           <p id="float-right"> Spinal disks—the shock
             absorbers between the vertebrae that can herniate and compress nerves—crave
@@ -39,7 +39,7 @@
             <img src="https://www.yogajournal.com/.image/t_share/MTQ3MTU3MTIzNjI3NzU0OTU4/3hp_288_07_bjk2.jpg" alt="Crescent Lunge Position" class="img1">
           </div>
 
-          <button class="accordion"> Well Being</button>
+          <button class="accordion"> Well Being &darr;</button>
           <div class="panel">
             <p>Like many other physical activities, Yoga also helps with mental
               health and well being. Keeping active is one of the key ingredints for having
